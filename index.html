@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lifestyle Survey Web</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation Menu -->
+<nav>
+  <button onclick="showFillSurvey()">Lifestyle Survey Web</button>
+  <button onclick="showResults()">View Survey Results</button>
+</nav>
+
+<!-- Screen 1: Fill Out Survey -->
+<div id="fillSurvey" class="screen">
+  <h1>Lifestyle Survey Web</h1>
+  <h2>Fill Out Survey</h2>
+  <form id="surveyForm">
+    
+    <!-- Personal Details -->
+    <fieldset>
+      <legend>Personal Details</legend>
+      <label>Name: <input type="text" id="name" required></label><br/>
+      <label>Surname: <input type="text" id="surname" required></label><br/>
+      <label>Contact Number: <input type="tel" id="contact" required></label><br/>
+      <label>Email: <input type="email" id="email" required></label><br/>
+      <label>Date of Birth: <input type="date" id="dob" required></label><br/>
+      <label>Survey Date: <input type="date" id="surveyDate" required></label>
+    </fieldset>
+
+    <!-- Favourite Food -->
+    <fieldset>
+      <legend>Favourite Food</legend>
+      <label><input type="checkbox" value="Pizza" name="food"> Pizza</label><br/>
+      <label><input type="checkbox" value="Sushi" name="food"> Sushi</label><br/>
+      <label><input type="checkbox" value="Burgers" name="food"> Burgers</label><br/>
+      <label><input type="checkbox" value="Salad" name="food"> Salad</label>
+    </fieldset>
+
+    <!-- Eating Out Rating -->
+<fieldset>
+  <legend>How much do you like to eat out?</legend>
+  <label><input type="radio" name="eatOutRating" value="1" required> 1</label>
+  <label><input type="radio" name="eatOutRating" value="2"> 2</label>
+  <label><input type="radio" name="eatOutRating" value="3"> 3</label>
+  <label><input type="radio" name="eatOutRating" value="4"> 4</label>
+  <label><input type="radio" name="eatOutRating" value="5"> 5</label>
+</fieldset>
+
+<!-- Opinions Likert Scale -->
+<fieldset>
+  <legend>Opinions</legend>
+  <table class="likert-table">
+    <tr>
+      <th></th>
+      <th>Strongly Agree</th>
+      <th>Agree</th>
+      <th>Neutral</th>
+      <th>Disagree</th>
+      <th>Strongly Disagree</th>
+    </tr>
+    <tr>
+      <td>I prefer healthy food options	</td>
+      <td><input type="radio" name="q1" value="5" required></td>
+      <td><input type="radio" name="q1" value="4"></td>
+      <td><input type="radio" name="q1" value="3"></td>
+      <td><input type="radio" name="q1" value="2"></td>
+      <td><input type="radio" name="q1" value="1"></td>
+    </tr>
+    <tr>
+      <td>I enjoy cooking at home</td>
+      <td><input type="radio" name="q2" value="5" required></td>
+      <td><input type="radio" name="q2" value="4"></td>
+      <td><input type="radio" name="q2" value="3"></td>
+      <td><input type="radio" name="q2" value="2"></td>
+      <td><input type="radio" name="q2" value="1"></td>
+    </tr>
+    <tr>
+      <td>I like to watch TV</td>
+      <td><input type="radio" name="q3" value="5" required></td>
+      <td><input type="radio" name="q3" value="4"></td>
+      <td><input type="radio" name="q3" value="3"></td>
+      <td><input type="radio" name="q3" value="2"></td>
+      <td><input type="radio" name="q3" value="1"></td>
+    </tr>
+    <tr>
+      <td>I enjoy trying new hobbies</td>
+      <td><input type="radio" name="q4" value="5" required></td>
+      <td><input type="radio" name="q4" value="4"></td>
+      <td><input type="radio" name="q4" value="3"></td>
+      <td><input type="radio" name="q4" value="2"></td>
+      <td><input type="radio" name="q4" value="1"></td>
+    </tr>
+  </table>
+</fieldset>
+
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<!-- Screen 2: View Results -->
+<div id="viewResults" class="screen" style="display:none;">
+  <h1>Survey Results</h1>
+  <div id="resultsDisplay">Loading...</div>
+  <button onclick="clearResults()" style="margin-top: 20px;">🗑 Clear All Survey Results</button>
+</div>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,88 @@
+/* Reset some default styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f5dc; /* Beige color */
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Use different fonts for headings and labels */
+h1 {
+  font-family: 'Pacifico', cursive; /* Stylish heading */
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #8b5e3c; /* Brownish for contrast */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #a76b4b;
+}
+
+/* Style the form containers */
+.screen {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #fff8dc; /* Light cream for contrast */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Style fieldsets and labels */
+fieldset {
+  border: 2px solid #d2b48c; /* Tan border */
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.2em;
+  padding: 0 10px;
+}
+
+label {
+  display: block;
+  margin: 8px 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+/* Style the submit button in forms */
+#surveyForm button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 30px;
+  font-size: 1.2em;
+  background-color: #8b5e3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#surveyForm button:hover {
+  background-color: #a76b4b;
+}
